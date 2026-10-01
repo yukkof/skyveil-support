@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyveil Player 技术支持</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+         max-width: 760px; margin: 0 auto; padding: 32px 20px; line-height: 1.75;
+         color: #1c1c1e; background: #fff; }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 28px; }
+  .date { color: #6b6b70; font-size: 14px; margin-bottom: 24px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .box { background: #f5f5f7; border-radius: 10px; padding: 16px 18px; margin: 18px 0; }
+  code { background: #f0f0f2; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+  a { color: #0071e3; }
+</style>
+</head>
+<body>
+
+<h1>Skyveil Player 技术支持</h1>
+<div class="date">版本 1.0 ｜ 适用平台：Apple Vision Pro（visionOS 2.0 及以上）</div>
+
+<h2>快速上手</h2>
+<ol>
+  <li>打开 App，进入「片库」页</li>
+  <li>从「文件」App 导入视频，或用 Mac / 文件共享把视频放进应用的 Documents 目录</li>
+  <li>点击影片开始播放</li>
+  <li>注视屏幕并捏合拖拽，可把画面移动到任意位置（贴墙 / 悬空 / 天花板）</li>
+  <li>在控制条上调节弧度、亮度、音量、倍速与字幕</li>
+</ol>
+
+<h2>支持的格式</h2>
+<p>上架版本使用系统解码器（AVFoundation），支持：</p>
+<ul>
+  <li>视频：MP4、MOV、M4V</li>
+  <li>流媒体：HLS（m3u8）</li>
+  <li>字幕：SRT、ASS / SSA、VTT（外挂）</li>
+</ul>
+
+<h2>常见问题</h2>
+
+<h3>找不到「文件」里的视频</h3>
+<p>请确认视频已放进应用的 Documents 目录。用 Mac 连接 Vision Pro，在 Finder 的「位置」里选择设备 → 文件共享 → Skyveil Player，拖入视频即可。</p>
+
+<h3>屏幕吸附不到墙上</h3>
+<p>首次使用会请求空间感知权限，请在系统设置中允许。光线过暗或墙面反光强烈时识别效果会下降，可适当提高环境亮度。</p>
+
+<h3>局域网 / NAS 播放失败</h3>
+<p>需要在系统设置中允许「本地网络」权限。请确认设备与 NAS 处于同一局域网，且地址可访问。</p>
+
+<h2>隐私</h2>
+<p>本应用不收集任何数据，详见 <a href="./privacy.html">隐私政策</a>。</p>
+
+<h2>联系我们</h2>
+<div class="box">
+如遇到问题，请把以下信息发给我们：Vision Pro 系统版本、应用版本、影片格式、问题复现步骤。<br>
+GitHub 仓库：<code>github.com/yukkof/SkyveilPlayer</code>
+</div>
+
+</body>
+</html>
